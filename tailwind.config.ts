@@ -23,6 +23,10 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
+        "lamp-glow": "hsl(var(--lamp-glow))",
+        "lamp-warm": "hsl(var(--lamp-warm))",
+        bronze: "hsl(var(--bronze))",
+        "antique-gold": "hsl(var(--antique-gold))",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

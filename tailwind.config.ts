@@ -27,6 +27,9 @@ export default {
         "lamp-warm": "hsl(var(--lamp-warm))",
         bronze: "hsl(var(--bronze))",
         "antique-gold": "hsl(var(--antique-gold))",
+        "emerald-heritage": "hsl(var(--emerald-heritage))",
+        "copper-vibrant": "hsl(var(--copper-vibrant))",
+        "royal-teal": "hsl(var(--royal-teal))",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

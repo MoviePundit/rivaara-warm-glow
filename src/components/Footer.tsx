@@ -98,7 +98,7 @@ export const Footer = () => {
                 placeholder="Enter your email"
                 className="text-sm"
               />
-              <Button variant="lamp" className="w-full">
+              <Button variant="vibrant" className="w-full">
                 Subscribe
               </Button>
             </div>

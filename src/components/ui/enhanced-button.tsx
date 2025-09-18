@@ -18,10 +18,12 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Beautiful lamp-inspired variants using design system
+        // Vibrant heritage variants using modern design system
         lamp: "bg-[var(--gradient-warm)] text-primary-foreground hover:shadow-[var(--shadow-warm)] transition-[var(--transition-glow)] border-0",
-        bronze: "bg-bronze text-primary-foreground hover:bg-antique-gold transition-[var(--transition-smooth)]",
-        glow: "bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-glow)]",
+        heritage: "bg-[var(--gradient-heritage)] text-secondary-foreground hover:shadow-[var(--shadow-heritage)] transition-[var(--transition-heritage)] border-0",
+        bronze: "bg-bronze text-primary-foreground hover:bg-copper-vibrant transition-[var(--transition-smooth)]",
+        glow: "bg-primary/15 text-primary border border-primary/30 hover:bg-primary/25 hover:shadow-[var(--shadow-glow)] transition-[var(--transition-glow)]",
+        vibrant: "bg-[var(--gradient-vibrant)] text-primary-foreground hover:shadow-[var(--shadow-warm)] transition-[var(--transition-glow)] border-0",
       },
       size: {
         default: "h-10 px-4 py-2",

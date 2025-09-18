@@ -27,14 +27,14 @@ export const AboutSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-accent/20">
+    <section className="py-16 bg-[var(--gradient-subtle)]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold">
-                Preserving <span className="text-primary">Traditional</span> Craftsmanship
+                Preserving <span className="bg-[var(--gradient-heritage)] bg-clip-text text-transparent">Traditional</span> Craftsmanship
               </h2>
               <p className="text-lg text-muted-foreground">
                 At Rivaara, we believe in the beauty of handmade craftsmanship. Our collection 
@@ -47,7 +47,7 @@ export const AboutSection = () => {
               </p>
             </div>
 
-            <Button variant="lamp" size="lg">
+            <Button variant="heritage" size="lg">
               Our Story
             </Button>
           </div>
@@ -55,11 +55,11 @@ export const AboutSection = () => {
           {/* Features Grid */}
           <div className="grid sm:grid-cols-2 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card transition-colors">
-                <CardContent className="p-6 space-y-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <feature.icon className="h-6 w-6 text-primary" />
-                  </div>
+                <Card key={index} className="bg-card/80 backdrop-blur-sm border-accent/30 hover:bg-card hover:shadow-[var(--shadow-heritage)] transition-[var(--transition-heritage)]">
+                  <CardContent className="p-6 space-y-4">
+                    <div className="w-12 h-12 bg-[var(--gradient-heritage)] rounded-full flex items-center justify-center">
+                      <feature.icon className="h-6 w-6 text-secondary-foreground" />
+                    </div>
                   <div className="space-y-2">
                     <h3 className="font-semibold text-lg">{feature.title}</h3>
                     <p className="text-sm text-muted-foreground">{feature.description}</p>

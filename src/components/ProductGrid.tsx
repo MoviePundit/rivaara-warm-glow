@@ -25,7 +25,7 @@ export const ProductGrid = ({ onAddToCart, onToggleFavorite }: ProductGridProps)
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-primary">Handcrafted</span> Collection
+            Our <span className="bg-[var(--gradient-vibrant)] bg-clip-text text-transparent">Handcrafted</span> Collection
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Each lamp is carefully crafted by skilled artisans, combining traditional techniques 
@@ -39,7 +39,7 @@ export const ProductGrid = ({ onAddToCart, onToggleFavorite }: ProductGridProps)
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={selectedCategory === category ? "lamp" : "glow"}
+                variant={selectedCategory === category ? "vibrant" : "glow"}
                 size="sm"
                 onClick={() => setSelectedCategory(category)}
               >
@@ -95,9 +95,9 @@ export const ProductGrid = ({ onAddToCart, onToggleFavorite }: ProductGridProps)
 
         {/* Load More */}
         <div className="text-center mt-12">
-          <Button variant="glow" size="lg">
-            Load More Products
-          </Button>
+        <Button variant="vibrant" size="lg">
+          Load More Products
+        </Button>
         </div>
       </div>
     </section>

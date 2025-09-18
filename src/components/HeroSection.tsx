@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-lamps.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-accent/20 to-lamp-warm/10">
+    <section className="relative overflow-hidden bg-[var(--gradient-hero)]">
       <div className="container mx-auto px-4 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -21,7 +21,7 @@ export const HeroSection = () => {
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Illuminate Your Space with{" "}
-                <span className="text-primary">Handcrafted</span>{" "}
+                <span className="bg-[var(--gradient-vibrant)] bg-clip-text text-transparent">Handcrafted</span>{" "}
                 Traditional Lamps
               </h1>
               
@@ -32,11 +32,11 @@ export const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="lamp" size="lg" className="text-base">
+              <Button variant="vibrant" size="lg" className="text-base">
                 Shop Collection
                 <ArrowRight className="h-5 w-5" />
               </Button>
-              <Button variant="glow" size="lg" className="text-base">
+              <Button variant="heritage" size="lg" className="text-base">
                 View Catalog
               </Button>
             </div>
@@ -70,10 +70,10 @@ export const HeroSection = () => {
             </div>
             
             {/* Floating Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border border-border">
+            <div className="absolute -bottom-6 -left-6 bg-card/90 backdrop-blur-sm p-4 rounded-xl shadow-[var(--shadow-heritage)] border border-emerald-heritage/20">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Star className="h-6 w-6 text-primary" />
+                <div className="w-12 h-12 bg-[var(--gradient-heritage)] rounded-full flex items-center justify-center">
+                  <Star className="h-6 w-6 text-secondary-foreground" />
                 </div>
                 <div>
                   <div className="font-semibold">Premium Quality</div>
@@ -82,9 +82,9 @@ export const HeroSection = () => {
               </div>
             </div>
             
-            <div className="absolute -top-6 -right-6 bg-card p-4 rounded-xl shadow-lg border border-border">
+            <div className="absolute -top-6 -right-6 bg-card/90 backdrop-blur-sm p-4 rounded-xl shadow-[var(--shadow-warm)] border border-primary/20">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">₹2,999</div>
+                <div className="text-2xl font-bold bg-[var(--gradient-vibrant)] bg-clip-text text-transparent">₹2,999</div>
                 <div className="text-sm text-muted-foreground">Starting From</div>
               </div>
             </div>

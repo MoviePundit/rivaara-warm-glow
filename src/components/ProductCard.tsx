@@ -68,14 +68,14 @@ export const ProductCard = ({ product, onAddToCart, onToggleFavorite }: ProductC
           )}
         </div>
         
-        <Button 
-          variant="lamp" 
-          className="w-full"
-          onClick={() => onAddToCart?.(product.id)}
-        >
-          <ShoppingCart className="h-4 w-4" />
-          Add to Cart
-        </Button>
+          <Button
+            variant="vibrant"
+            className="w-full"
+            onClick={() => onAddToCart?.(product.id)}
+          >
+            <ShoppingCart className="h-4 w-4" />
+            Add to Cart
+          </Button>
       </CardContent>
     </Card>
   );

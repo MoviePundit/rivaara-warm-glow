@@ -55,7 +55,7 @@ export const AboutSection = () => {
           {/* Features Grid */}
           <div className="grid sm:grid-cols-2 gap-6">
             {features.map((feature, index) => (
-                <Card key={index} className="bg-card/80 backdrop-blur-sm border-accent/30 hover:bg-card hover:shadow-[var(--shadow-heritage)] transition-[var(--transition-heritage)]">
+                <Card key={index} className="bg-card/90 backdrop-blur-md border-accent/40 hover:bg-card hover:shadow-[var(--shadow-heritage)] transition-[var(--transition-heritage)]">
                   <CardContent className="p-6 space-y-4">
                     <div className="w-12 h-12 bg-[var(--gradient-heritage)] rounded-full flex items-center justify-center">
                       <feature.icon className="h-6 w-6 text-secondary-foreground" />

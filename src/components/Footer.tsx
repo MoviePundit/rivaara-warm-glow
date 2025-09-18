@@ -26,13 +26,13 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary/30 border-t border-border">
+    <footer className="bg-card/50 backdrop-blur-sm border-t border-border/50">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold text-primary">Rivaara</h3>
+              <h3 className="text-2xl font-bold bg-[var(--gradient-vibrant)] bg-clip-text text-transparent">Rivaara</h3>
               <p className="text-sm text-muted-foreground">Handmade Traditional Lamps</p>
             </div>
             <p className="text-sm text-muted-foreground">

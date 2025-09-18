@@ -70,19 +70,19 @@ export const HeroSection = () => {
             </div>
             
             {/* Floating Cards */}
-            <div className="absolute -bottom-6 -left-6 bg-card/90 backdrop-blur-sm p-4 rounded-xl shadow-[var(--shadow-heritage)] border border-emerald-heritage/20">
+            <div className="absolute -bottom-6 -left-6 bg-card/95 backdrop-blur-md p-4 rounded-xl shadow-[var(--shadow-heritage)] border border-emerald-heritage/30">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-[var(--gradient-heritage)] rounded-full flex items-center justify-center">
                   <Star className="h-6 w-6 text-secondary-foreground" />
                 </div>
                 <div>
-                  <div className="font-semibold">Premium Quality</div>
+                  <div className="font-semibold text-foreground">Premium Quality</div>
                   <div className="text-sm text-muted-foreground">Certified Artisans</div>
                 </div>
               </div>
             </div>
             
-            <div className="absolute -top-6 -right-6 bg-card/90 backdrop-blur-sm p-4 rounded-xl shadow-[var(--shadow-warm)] border border-primary/20">
+            <div className="absolute -top-6 -right-6 bg-card/95 backdrop-blur-md p-4 rounded-xl shadow-[var(--shadow-warm)] border border-primary/30">
               <div className="text-center">
                 <div className="text-2xl font-bold bg-[var(--gradient-vibrant)] bg-clip-text text-transparent">₹2,999</div>
                 <div className="text-sm text-muted-foreground">Starting From</div>

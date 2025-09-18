@@ -2,11 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Traditional Handmade Lamps Design System - All colors MUST be HSL */
+/* Dark Vibrant Heritage Lamps Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Vibrant heritage color palette */
+    /* Dark vibrant heritage color palette - now default */
+    --background: 25 30% 6%;
+    --foreground: 35 25% 95%;
+
+    --card: 25 25% 8%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 25 25% 8%;
+    --popover-foreground: 35 25% 95%;
+
+    /* Vibrant golden primary - enhanced for dark mode */
+    --primary: 50 90% 70%;
+    --primary-foreground: 25 30% 6%;
+
+    /* Rich emerald secondary for heritage touch */
+    --secondary: 160 40% 20%;
+    --secondary-foreground: 35 25% 95%;
+
+    --muted: 25 20% 12%;
+    --muted-foreground: 35 15% 70%;
+
+    /* Vibrant teal accent - enhanced for dark */
+    --accent: 175 55% 55%;
+    --accent-foreground: 25 30% 6%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 35 25% 95%;
+
+    --border: 25 20% 15%;
+    --input: 25 20% 15%;
+    --ring: 50 90% 70%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 175 60% 50%;
+    
+    /* Enhanced vibrant heritage design tokens for dark mode */
+    --lamp-glow: 50 100% 75%;
+    --lamp-warm: 40 80% 65%;
+    --bronze: 30 60% 45%;
+    --antique-gold: 45 85% 70%;
+    --emerald-heritage: 160 70% 50%;
+    --copper-vibrant: 15 80% 60%;
+    --royal-teal: 175 75% 55%;
+    
+    /* Enhanced dark mode gradients with vibrant heritage touch */
+    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--lamp-glow)));
+    --gradient-heritage: linear-gradient(135deg, hsl(var(--emerald-heritage)), hsl(var(--accent)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent) / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--emerald-heritage) / 0.1));
+    --gradient-vibrant: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--royal-teal)));
+    
+    /* Enhanced dark mode shadows with vibrant glow */
+    --shadow-warm: 0 20px 40px -10px hsl(var(--primary) / 0.5);
+    --shadow-glow: 0 0 60px hsl(var(--lamp-glow) / 0.4);
+    --shadow-card: 0 10px 30px -5px hsl(var(--primary) / 0.3);
+    --shadow-heritage: 0 15px 35px -8px hsl(var(--emerald-heritage) / 0.35);
+    
+    /* Smooth dark mode transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-heritage: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .light {
+    /* Light mode - now secondary option */
     --background: 35 20% 99%;
     --foreground: 25 15% 12%;
 
@@ -16,18 +88,15 @@
     --popover: 35 25% 97%;
     --popover-foreground: 25 15% 12%;
 
-    /* Vibrant golden primary - more saturated */
     --primary: 45 85% 55%;
     --primary-foreground: 35 25% 98%;
 
-    /* Rich emerald secondary for heritage touch */
     --secondary: 160 45% 25%;
     --secondary-foreground: 35 25% 98%;
 
     --muted: 35 30% 92%;
     --muted-foreground: 25 20% 40%;
 
-    /* Vibrant teal accent */
     --accent: 175 60% 50%;
     --accent-foreground: 35 25% 98%;
 
@@ -37,54 +106,19 @@
     --border: 35 30% 88%;
     --input: 35 30% 90%;
     --ring: 45 85% 55%;
-
-    --radius: 0.5rem;
-
+    
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 175 60% 50%;
-    
-    /* Vibrant heritage design tokens */
-    --lamp-glow: 50 95% 70%;
-    --lamp-warm: 40 70% 60%;
-    --bronze: 30 50% 35%;
-    --antique-gold: 45 80% 65%;
-    --emerald-heritage: 160 60% 40%;
-    --copper-vibrant: 15 70% 50%;
-    --royal-teal: 175 70% 45%;
-    
-    /* Modern vibrant gradients with heritage touch */
-    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--lamp-glow)));
-    --gradient-heritage: linear-gradient(135deg, hsl(var(--emerald-heritage)), hsl(var(--accent)));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent) / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.15), hsl(var(--emerald-heritage) / 0.1));
-    --gradient-vibrant: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--royal-teal)));
-    
-    /* Enhanced shadows with vibrant colors */
-    --shadow-warm: 0 15px 35px -10px hsl(var(--primary) / 0.4);
-    --shadow-glow: 0 0 50px hsl(var(--lamp-glow) / 0.3);
-    --shadow-card: 0 8px 25px -5px hsl(var(--primary) / 0.2);
-    --shadow-heritage: 0 10px 30px -8px hsl(var(--emerald-heritage) / 0.25);
-    
-    /* Smooth modern transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-glow: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-heritage: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
   }
 
   .dark {
+    /* Explicit dark mode (same as root for consistency) */
     --background: 25 30% 6%;
     --foreground: 35 25% 95%;
 
@@ -112,6 +146,7 @@
     --border: 25 20% 15%;
     --input: 25 20% 15%;
     --ring: 50 90% 70%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
